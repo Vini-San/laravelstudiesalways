@@ -15,8 +15,7 @@ class LogsFactory extends Factory
     public function definition()
     {
         return [
-            'data_entrada'=>$this->faker->timestamp(),
-            'criado_em'=>$this->faker->timestamp(),
+            
             'id_user'=>User::pluck('id')->random(),
         ];
     }
